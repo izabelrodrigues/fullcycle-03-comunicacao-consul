@@ -74,4 +74,6 @@ consul reload
 consul catalog nodes -service nginx
 ```
 
+### Documentação CONSUL
 
+- https://www.consul.io/commands
