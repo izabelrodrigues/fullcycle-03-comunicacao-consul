@@ -1,0 +1,2 @@
+1) O arquivo index.html deve ser copiado para a pasta /usr/share/nginx/html/ dos clients 01 e 02
+2) O arquivo default.conf deve ser copiado para /etc/nginx/conf.d/. Substituindo original nos clientes 01 e 02
