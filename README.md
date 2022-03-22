@@ -35,3 +35,43 @@ ifconfig
 mkdir /var/lib/consul
 ```
 
+### Inicializando o agent do consul em modo server. 
+
+```
+consul agent -config-dir=/etc/consul.d
+```
+
+### Inicializando o agent do consul em modo client. 
+
+```
+consul agent -data-dir=/var/lib/consul  -config-dir=/etc/consul.d
+```
+
+### Listando os membros no consul
+
+```
+consul members
+```
+
+### Ingressando a um grupo consul existente
+
+Dentro da maquina que quer ingressar, por exemplo a consul-cliente-01 (ip 172.21.0.5). <br/>
+Considerando que tenha um grupo que tenha o servidor com ip_server: 172.21.0.6
+
+```
+consul join 172.21.0.6
+```
+
+### Recargar um arquivo de serviços com o consul já inicializado
+Ver clients/consul-client-01/services.json
+
+```
+consul reload
+```
+
+### Listar em qual node está rodando um serviço já registrado. Por exemplo nginx
+```
+consul catalog nodes -service nginx
+```
+
+
