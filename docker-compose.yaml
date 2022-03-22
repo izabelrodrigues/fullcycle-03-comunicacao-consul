@@ -8,6 +8,8 @@ services:
     command: ["tail", "-f", "/dev/null"]
     volumes:
       - ./servers/consul-server-01:/etc/consul.d
+    ports:
+      - "8500:8500"
     networks:
       - fullcycle-network
 

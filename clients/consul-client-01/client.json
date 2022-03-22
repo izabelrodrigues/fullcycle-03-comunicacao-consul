@@ -1,6 +1,6 @@
 {
     "server": false,
-    "bind_addr": "172.21.0.5",
+    "bind_addr": "172.19.0.5",
     "node_name": "consul-client-01",
     "encrypt": "jJDGoNanp9lifl02KDkx8zl3WQTyY+X5L3BFIhpkVws="
 }
